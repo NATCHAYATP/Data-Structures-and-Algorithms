@@ -1,0 +1,140 @@
+Day1 HelloWorld
+
+setting ติดตั้ง java
+
+1. เปิด terminal แล้วรัน (รันที่ตำแหน่งไหนก็ได้ ไม่ต้อง cd)
+
+curl -s "https://get.sdkman.io" | bash
+
+2. source "/Users/hooya/.sdkman/bin/sdkman-init.sh"
+
+3. ดูว่ามีเวอร์ชั่นไหนบ้าง
+
+sdk list java
+
+4. ครั้งนี้เราจะใช้เวอร์ชั่น 11.0.18-zulu 
+
+sdk install java 11.0.18-zulu 
+
+5. เช็คเวอร์ชั่นที่ดาวน์โหลด
+
+java -version
+
+7. กรณีอยากติดตั้ง version ใหม่ เช่น 19.0.1-zulu 
+
+sdk install java 19.0.1-zulu 
+
+ถ้าไม่อยากมาใช้เวอร์ชั่นนี้ให้กด n ตอนขึ้นคำถาม เมื่ออยากเปลี่ยนเวอร์ชั่นที่ใช้ภายหลัง
+เช่น เปลี่ยนเป็น java 19.0.1-zulu ให้ใช้คำสั่ง 
+
+sdk use java 19.0.1-zulu
+
+8. สร้างโฟลเดอร์เพื่อเก็บไฟล์ต่างๆไว้สำหรับคอร์สนี้
+เลือก path ที่ต้องการ สามารถใช้ cd .. เพื่อย้อนกลับ path ที่อยู่ และใช้ cd เพื่อเข้าไปในโฟลเดอร์ 
+แต่ครั้งนี้เราจะสร้างโฟลเดอร์ใหม่ชื่อ learnJava ใน Document
+
+cd Document
+mkdir learnJava
+cd learnJava
+
+9. สร้างไฟล์ใหม่ด้วยคำสั่ง
+
+touch HelloWorld.java
+
+10. เปิดไฟล์ใน vscode (ใครยังไม่มีให้ติดตั้งมาก่อน)
+code .
+
+กรณีพิมพ์แล้วไม่เด้งไป vscode ให้เปิด vscode 
+กด cmd+shift+p
+เลือก Shell Command: install 'code' command in PATH
+
+11. เมื่อเปิดไฟล์แล้ว ก็สามารถลุยโจทย์ได้
+
+--------------------------------------
+
+ข้อที่ 0 โจทยฺ
+
+~/Desktop/hello> javac HelloWorld.java
+~/Desktop/hello> java HelloWorld
+Hello, World
+
+วิเคราะห์โจทย์
+เมื่อเราพิมพ์ java HelloWorld ใน terminal มันจะตอบกลับมาว่า Hello, World
+
+วิธีทำ 
+
+1. เปิดไฟล์ HelloWorld.java ใน vscode แล้วพิมพ์
+
+public class HelloWorld {
+
+    public static void main(String[] args) {
+
+        // Prints "Hello, World" in the terminal window.
+        System.out.println("Hello, World");
+    }
+
+}
+
+จากนั้น save แล้วรันคำสั่งใน terminal
+
+javac HelloWorld.java
+
+จะมีไฟล์ใหม่ขึ้นมาในโฟลเดอร์แต่ไม่ต้องสนใจ
+
+รันคำสั่ง 
+
+java HelloWorld 
+
+แล้วจะขึ้นข้อความตามโจทย์
+--------------------------------------------------------------
+
+ข้อที่ 1 โจทย์
+
+~/Desktop/hello> javac HelloGoodbye.java
+
+~/Desktop/hello> java HelloGoodbye Kevin Bob
+Hello Kevin and Bob.
+Goodbye Bob and Kevin.
+
+~/Desktop/hello> java HelloGoodbye Alejandra Bahati
+Hello Alejandra and Bahati.
+Goodbye Bahati and Alejandra.
+
+วิเคราะห์โจทย์
+เมื่อเราพิมพ์ java HelloGoodbye Kevin Bob ใน terminal มันจะตอบกลับมาว่า 
+Hello Kevin and Bob.
+Goodbye Bob and Kevin.
+จะเห็นว่าชื่อสลับกัน
+
+วิธีทำ 
+
+1. สร้างไฟล์ใหม่ชื่อ HelloGoodbye.java 
+2. เปิดไฟล์ใน vscode
+3. พิมพ์ดังนี้
+
+public class HelloGoodbye {
+
+    public static void main(String[] args) {
+
+        // Prints "Hello, World" in the terminal window.
+        System.out.println("Hello " + args[0] + " and " + args[1]);
+        System.out.println("Goodbye " + args[1] + " and " + args[0]);
+    }
+
+}
+
+จากนั้น save
+
+4. เปิดเทอมินอล แล้วพิมพ์คำสั่ง
+
+javac HelloGoodbye.java
+
+java HelloGoodbye Kevin Bob
+
+ก็จะขึ้นข้อความดังตัวอย่าง ที่เป็นแบบนี้เพราะมีการส่งและรับ argument
+
+-----------------------------------------------------------------
+
+
+
+
