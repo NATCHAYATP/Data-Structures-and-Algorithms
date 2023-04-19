@@ -135,6 +135,30 @@ java HelloGoodbye Kevin Bob
 
 -----------------------------------------------------------------
 
+ข้อที่ 2 โจทย์
+
+~/Desktop/hello> javac-algs4 RandomWord.java
+
+~/Desktop/hello> java-algs4 RandomWord
+heads tails
+tails
+
+~/Desktop/hello> java-algs4 RandomWord
+heads tails
+heads
+
+~/Desktop/hello> more animals8.txt
+ant bear cat dog
+emu fox goat horse
+
+~/Desktop/hello> java-algs4 RandomWord < animals8.txt
+emu
+
+~/Desktop/hello> java-algs4 RandomWord < animals8.txt
+bear
+
+วิเคราะห์โจทย์
 
 
+วิธีทำ 
 
