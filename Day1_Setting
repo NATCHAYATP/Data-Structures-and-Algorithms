@@ -1,0 +1,54 @@
+Day1 HelloWorld
+
+setting ติดตั้ง java
+
+1. เปิด terminal แล้วรัน (รันที่ตำแหน่งไหนก็ได้ ไม่ต้อง cd)
+
+curl -s "https://get.sdkman.io" | bash
+
+2. source "/Users/hooya/.sdkman/bin/sdkman-init.sh"
+
+3. ดูว่ามีเวอร์ชั่นไหนบ้าง
+
+sdk list java
+
+4. ครั้งนี้เราจะใช้เวอร์ชั่น 11.0.18-zulu 
+
+sdk install java 11.0.18-zulu 
+
+5. เช็คเวอร์ชั่นที่ดาวน์โหลด
+
+java -version
+
+7. กรณีอยากติดตั้ง version ใหม่ เช่น 19.0.1-zulu 
+
+sdk install java 19.0.1-zulu 
+
+ถ้าไม่อยากมาใช้เวอร์ชั่นนี้ให้กด n ตอนขึ้นคำถาม เมื่ออยากเปลี่ยนเวอร์ชั่นที่ใช้ภายหลัง
+เช่น เปลี่ยนเป็น java 19.0.1-zulu ให้ใช้คำสั่ง 
+
+sdk use java 19.0.1-zulu
+
+8. สร้างโฟลเดอร์เพื่อเก็บไฟล์ต่างๆไว้สำหรับคอร์สนี้
+เลือก path ที่ต้องการ สามารถใช้ cd .. เพื่อย้อนกลับ path ที่อยู่ และใช้ cd เพื่อเข้าไปในโฟลเดอร์ 
+แต่ครั้งนี้เราจะสร้างโฟลเดอร์ใหม่ชื่อ learnJava ใน Document
+
+cd Document
+mkdir learnJava
+cd learnJava
+
+9. สร้างไฟล์ใหม่ด้วยคำสั่ง
+
+touch HelloWorld.java
+
+10. เปิดไฟล์ใน vscode (ใครยังไม่มีให้ติดตั้งมาก่อน)
+code .
+
+กรณีพิมพ์แล้วไม่เด้งไป vscode ให้เปิด vscode 
+กด cmd+shift+p
+เลือก Shell Command: install 'code' command in PATH
+
+11. เมื่อเปิดไฟล์แล้ว ก็สามารถลุยโจทย์ได้
+
+--------------------------------------
+
