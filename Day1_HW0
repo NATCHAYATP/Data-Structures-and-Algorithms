@@ -1,0 +1,34 @@
+ข้อที่ 0 โจทย์
+
+~/Desktop/hello> javac HelloWorld.java
+~/Desktop/hello> java HelloWorld
+Hello, World
+
+วิเคราะห์โจทย์
+เมื่อเราพิมพ์ java HelloWorld ใน terminal มันจะตอบกลับมาว่า Hello, World
+
+วิธีทำ 
+
+1. เปิดไฟล์ HelloWorld.java ใน vscode แล้วพิมพ์
+
+public class HelloWorld {
+
+    public static void main(String[] args) {
+
+        // Prints "Hello, World" in the terminal window.
+        System.out.println("Hello, World");
+    }
+
+}
+
+จากนั้น save แล้วรันคำสั่งใน terminal
+
+javac HelloWorld.java
+
+จะมีไฟล์ใหม่ขึ้นมาในโฟลเดอร์แต่ไม่ต้องสนใจ
+
+รันคำสั่ง 
+
+java HelloWorld 
+
+แล้วจะขึ้นข้อความตามโจทย์
