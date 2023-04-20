@@ -1,0 +1,44 @@
+ข้อที่ 1 โจทย์
+
+~/Desktop/hello> javac HelloGoodbye.java
+
+~/Desktop/hello> java HelloGoodbye Kevin Bob
+Hello Kevin and Bob.
+Goodbye Bob and Kevin.
+
+~/Desktop/hello> java HelloGoodbye Alejandra Bahati
+Hello Alejandra and Bahati.
+Goodbye Bahati and Alejandra.
+
+วิเคราะห์โจทย์
+เมื่อเราพิมพ์ java HelloGoodbye Kevin Bob ใน terminal มันจะตอบกลับมาว่า 
+Hello Kevin and Bob.
+Goodbye Bob and Kevin.
+จะเห็นว่าชื่อสลับกัน
+
+วิธีทำ 
+
+1. สร้างไฟล์ใหม่ชื่อ HelloGoodbye.java 
+2. เปิดไฟล์ใน vscode
+3. พิมพ์ดังนี้
+
+public class HelloGoodbye {
+
+    public static void main(String[] args) {
+
+        // Prints "Hello, World" in the terminal window.
+        System.out.println("Hello " + args[0] + " and " + args[1]);
+        System.out.println("Goodbye " + args[1] + " and " + args[0]);
+    }
+
+}
+
+จากนั้น save
+
+4. เปิดเทอมินอล แล้วพิมพ์คำสั่ง
+
+javac HelloGoodbye.java
+
+java HelloGoodbye Kevin Bob
+
+ก็จะขึ้นข้อความดังตัวอย่าง ที่เป็นแบบนี้เพราะมีการส่งและรับ argument
