@@ -40,10 +40,11 @@ import edu.princeton.cs.algs4.StdRandom;
 If you use IntelliJ and the provided project folder, IntelliJ will automatically add and remove import statements as needed, so you won’t need to type them.
 
 วิเคราะห์โจทย์
-  1. รับค่าจากการพิมพ์ค่าผ่าน terminal
-  2. จากนั้นให้ค่าความน่า
-  3.
-  4.
+  1. ให้เขียน RandomWord.java ที่รับค่าลำดับคำศัพท์ จากนั้นสุ่มคำมาแสดง
+  2. ห้ามเก็บคำศัพท์แบบลิส
+  3. ให้ใช้ Knuth’s method ที่กำหนดในการทำงานต่างๆ
+  4. เมื่อรับคำศัพท์มา ให้ใส่ค่าความน่าจะเป็นที่มีค่า 1/ลำดับ ให้แก่คำศัพท์นั้น เพื่อให้มันสุ่มโอกาสว่าคำศัพท์นั้นจะถูกแทนที่เข้าไปในตัวแปร champion หรือไม่
+  5. ให้ทำทุกคำศัพท์ที่รับมา จากนั้น print ค่าคำศัพท์ที่เหลือรอด
 
 วิธีทำ 
 1. สร้างไฟล์ RandomWord.java 
