@@ -55,7 +55,7 @@ import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
 //StdIn.isEmpty = ส่งคืนค่าเมื่อไม่มีค่าเพิ่ม ก็คือถ้าไม่มีค่าเพิ่มจะเป็นจริง
 //StdIn.readingString = อ่านและคืนสตริง
-//StdRandom.bernoulli = คืนค่าความน่าจะเป็นให้สตริง มันจะเป็นเท็จถ้ามากกว่า 1
+//StdRandom.bernoulli = คือค่าเป็น boolean หลังจากสุ่มค่าความน่าจะเป็น
 
 public class RandomWord {
 
